@@ -34,7 +34,7 @@ for ($x = 0; $x < 9; $x++) {
 		if($x != 0){
 		echo "|";
 	}
-	echo "2~".$comment1["comment"]."~3~".$comment1["userID"]."~4~".$comment1["likes"]."~5~0~7~0~9~CVOLTON GDPS~6~".$comment1["commentID"];
+	echo "2~".$comment1["comment"]."~3~".$comment1["userID"]."~4~".$comment1["likes"]."~5~0~7~0~9~Some time~6~".$comment1["commentID"];
 	$query12 = $db->prepare("SELECT * FROM users WHERE userID = '".$comment1["userID"]."'");
 	$query12->execute();
 	$result12 = $query12->fetchAll();
